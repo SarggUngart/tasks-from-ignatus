@@ -1,21 +1,24 @@
 import React from 'react'
+import {FilterType} from "./HW2";
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: any // need to fix any
-    deleteAffairCallback: any // need to fix any
+
+  affair: (filter: FilterType) => void
+  deleteAffairCallback: () => void
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {}// need to fix
+  const deleteCallback = () => {
+    props.deleteAffairCallback()
+  }
 
-    return (
-        <div>
-            // show some text
+  return (
+    <div>
+      // show some text
 
-            <button onClick={deleteCallback}>X</button>
-        </div>
-    )
+      <button onClick={deleteCallback}>X</button>
+    </div>
+  )
 }
 
 export default Affair
