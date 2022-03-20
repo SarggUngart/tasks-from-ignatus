@@ -1,7 +1,16 @@
-.someClass {
+.wrapper {
 
 }
 
 .error {
-    border: 1px solid red;
+    border: 2px solid red;
 }
+
+.allow {
+    border: 2px solid black;
+}
+
+.default {
+    border: 2px solid blue;
+}
+
