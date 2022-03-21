@@ -20,9 +20,11 @@ const Greeting: React.FC<GreetingPropsType> = (
   return (
     <div className={s.wrapper}>
       <input value={name} onChange={setNameCallback} onKeyPress={setNameKeyBoard} className={inputClass}/>
-      <span>{error}</span>
       <button onClick={addUser}>add</button>
       <span>{totalUsers}</span>
+      <div>
+        <span>{error}</span>
+      </div>
     </div>
   )
 }
