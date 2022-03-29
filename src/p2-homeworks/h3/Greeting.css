@@ -6,11 +6,13 @@
     border: 2px solid red;
 }
 
-.allow {
-    border: 2px solid black;
+.error-msg {
+    color: red;
 }
 
+
+
 .default {
-    border: 2px solid blue;
+    border: 2px solid black;
 }
 
